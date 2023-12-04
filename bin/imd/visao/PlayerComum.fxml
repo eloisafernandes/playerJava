@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imd.controle.PlayerController">
+   <children>
+      <AnchorPane layoutY="300.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: red;">
+         <children>
+            <Button fx:id="stop" layoutX="274.0" layoutY="37.0" onAction="#togglePlayStop" text="Play" />
+            <Button layoutX="344.0" layoutY="37.0" onAction="#playNextTrack" text="Next" />
+            <Button layoutX="192.0" layoutY="37.0" onAction="#playPreviousTrack" text="Prev" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="263.0" layoutY="14.0" text="Músicas">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="musicList" layoutX="125.0" layoutY="49.0" prefHeight="250.0" prefWidth="350.0" />
+      <Label fx:id="labeluser" layoutX="518.0" layoutY="30.0" text="USUER" />
+      <Button layoutX="495.0" layoutY="62.0" mnemonicParsing="false" text="Criar playlist" />
+   </children>
+</AnchorPane>

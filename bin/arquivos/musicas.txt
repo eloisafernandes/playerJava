@@ -1,0 +1,2 @@
+Se Joga na Minha Vida,C:\Users\elois\eclipse-workspace02\Player\src\assets\musicas\henriqueejulianooficialsejoga.mp3
+ate que durou,C:\Users\elois\eclipse-workspace02\Player\src\assets\musicas\atequedurou.mp3

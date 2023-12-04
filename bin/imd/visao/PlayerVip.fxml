@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!-- <VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imd.controle.PlayerController">
+   <AnchorPane prefHeight="200.0" prefWidth="600.0">
+      <children>
+      
+          <ListView fx:id="musicList" prefHeight="400.0" prefWidth="600.0" />
+      </children>
+   </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <Button layoutX="219.0" layoutY="13.0" onAction="#pause" text="Pause" />
+          <Button layoutX="273.0" layoutY="13.0" onAction="#play" text="Play" />
+          <Button layoutX="327.0" layoutY="13.0" onAction="#stop" text="Stop" />
+          <Button layoutX="395.0" layoutY="14.0" onAction="#playNextTrack" text="Next" />
+         <Button layoutX="147.0" layoutY="13.0" onAction="#playPreviousTrack" text="Prev" />
+      </children>
+   </AnchorPane>
+
+</VBox>-->
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imd.controle.PlayerController">
+   <children>
+      <AnchorPane fx:id="listasPlaylists" layoutY="44.0" prefHeight="290.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="-162.0" layoutY="-91.0" prefHeight="290.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="23.0" text="PLAYLIST" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labeluser" layoutX="508.0" layoutY="20.0" text="USUER" />
+      <AnchorPane layoutY="335.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: RED;">
+         <children>
+               <Button layoutX="158.0" layoutY="20.0" onAction="#playPreviousTrack" text="Prev" />
+                <Button fx:id="stop" layoutX="257.0" layoutY="20.0" onAction="#togglePlayStop" text="Play" />
+                <Button layoutX="357.0" layoutY="20.0" onAction="#playNextTrack" text="Next" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="musicList" layoutX="215.0" layoutY="44.0" prefHeight="290.0" prefWidth="200.0" />
+      <Label layoutX="277.0" layoutY="18.0" text="Músicas">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="17.0" text="Playlists">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="400.0" layoutY="44.0" prefHeight="290.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="91.0" layoutY="14.0" mnemonicParsing="false" text="Criar playlist" />
+            <Button layoutX="87.0" layoutY="62.0" mnemonicParsing="false" onAction="#selecionarPasta" text="Criar diretório" />
+            <Label fx:id="errodiretorio" alignment="CENTER" layoutX="5.0" layoutY="44.0" prefWidth="190.0" textFill="#fc0000" />
+         </children>
+      </AnchorPane>
+      
+     
+
+		  
+     
+
+		
+   </children>
+</AnchorPane>
